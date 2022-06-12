@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<style>
+      /* HEAD....... */
+  .head{
+    width: 100%;
+    height: 650px;
+   
+
+}
+.head .left{
+ background-image: url("images/Untitled-5.gif");
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 100%;
+}
+.head .top{
+    width: 100%;
+    height: 15%;
+    margin-top: 25px;
+    display: flex;
+}
+.left .bottom{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+.left .bottom>p:nth-of-type(1){
+     font-style: normal;
+     font-variant-ligatures: normal;
+     font-variant-caps: normal;
+     font-variant-numeric: normal;
+     font-variant-east-asian: normal;
+     font-weight: 400;
+     font-stretch: normal;
+     font-size: 30px;
+     font-family: "Alex Brush", cursive;
+     color: goldenrod;
+     margin-left: 25%;
+     padding-bottom: 0;
+     height: 20px;
+}
+.left .bottom>h3{
+     font-size: 35px;
+     color: rgb(252, 252, 252);
+     margin-left: 20%;
+     letter-spacing: 3px;
+     height: 20px;
+}
+.left .bottom>p:nth-of-type(2){
+     font-size: 15px;
+     background-color: goldenrod;
+     margin-left: 18%;
+     padding: 0;
+     height: 20px;
+     border: none;
+}
+.left .bottom>button{
+     font-size: 15px;
+     background-color: rgb(255, 255, 253);
+     margin-left: 35%;
+     padding: 0 20px;
+     height: 50px;
+     border: none;
+}
+.left .bottom>button:hover{
+     background-color:  goldenrod;
+}
+.top>figure{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top>figure>img{
+    height: 70%;
+    width: 80%;
+}
+.top>nav{
+ width: 55%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: rgb(255, 255, 255);
+ padding: 40px;
+ margin-left: 40px;
+}
+.top>nav>ul{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ /* border: 2px solid rgb(212, 39, 8); */
+
+}
+.top>nav>ul>li{
+ width: auto;
+ height: auto;
+ padding: 10px;
+ position: relative;  
+ padding-left: 5px;
+}
+.top>nav>ul>li>a{
+
+ width: 100%;
+ height: 100%;
+}
+.left .bar
+{
+ position: absolute;
+ width: 700px;
+ height: 400px;
+ background-color: white;
+ margin-top: 40px;
+ left: -8px;
+ border-top: 3px solid rgb(235, 155, 16);
+ opacity: 0;
+ visibility: hidden;
+ transition: all 0.4s ease;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1;
+}
+.left .bartwo{
+ position: absolute;
+ width: 700px;
+ height: 400px;
+ background-color: white;
+ margin-top: 40px;
+ left: -8px;
+ border-top: 3px solid rgb(252, 225, 16);
+ opacity: 0;
+ visibility: hidden;
+ transition: all 0.4s ease;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1;
+}
+.top>nav>ul>li:hover>div{
+ opacity: 1;
+ visibility: visible;
+}
+.top .bar>nav{
+ width: 70%;
+ height: 90%;
+ color: black;
+ display: flex;
+ flex-wrap: wrap;
+
+}
+.top .bar>nav>ul{
+ padding: 5px 10px 10px 35px;
+
+}
+.top .bar>nav>ul>li{
+ padding: 3px;
+}
+.top .bar>nav>ul>li>a{
+ font-size: 15px;
+ color: rgb(87, 87, 87);
+
+}
+.top .bar>nav>ul>li:hover>a{
+ color: rgb(245, 178, 10);
+}
+.top .bar>nav>ul>span{
+ width: 100px;
+ height: 0;
+ padding: 0.1px;
+ background-color: rgb(195, 193, 193);
+ margin: 10px 10px 10px 0;
+}
+.bar .ohh{
+ height: 90%;
+ width: 30%;
+}
+.bar .ohh>figure{
+ height: 100%;
+ width: 100%;
+ display: flex;
+ align-items: flex-start;
+ justify-content: flex-start;
+}
+.bar .ohh>figure>img{
+ height: 95%;
+ width: 85%;
+}
+.bar .ohh>figure>img:hover{
+ transform: scale(1.1);
+}
+
+.top>nav>ul>li>a:hover{
+ color: rgb(242, 218, 0);
+}
+.top .bartwo{
+ width: 640px;
+ height: 380px;
+ background-color: white;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ 
+}
+.top .bartwo>figure{
+ width: 30%;
+ height: 60%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ margin:40px 20px ;
+ position: relative;
+}
+.top .bartwo>figure>img{
+ width: 100%;
+ height: 90%;
+ border: 3px solid rgb(211, 208, 208);
+ border-radius: 1%;
+}
+.top .bartwo>figure>figcaption{
+ position: absolute;
+ color: rgb(60, 60, 60);
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ bottom: -50px;
+ left: 5px;
+}
+.top .bartwo>figure>figcaption:hover{
+ color: rgb(247, 247, 2);
+}
+.top .bartwo>figure>img:hover{
+ transform: scale(1.2);
+}
+.top .bartwo>figure>figcaption:hover>p{
+ transform: scale(2);
+ color: red;
+}
+.top .bartwo>figure>figcaption>p{
+ color: rgb(6, 6, 6);
+ margin-top: 10px;
+}
+
+
+.top>section{
+ height: 100%;
+ width: 20%;
+ display: flex; 
+ align-items: center;
+ justify-content: center;
+}
+
+.top>section>span{
+ height: 30%;
+ width: 22%;
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ fill:#ffffff;
+ transition: 1s;
+}
+.top>section>span:hover{
+ transform: rotateY(180deg);
+ fill: rgb(242, 218, 0);
+ 
+}
+
+
+/* body.......... */
+
+
+/* sectionone........... */
+.trans{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trans>figure{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .trans>figure>img{
+      width: 40%;
+      height: 70%;
+      filter: grayscale(100%);
+      opacity: 0.4;
+      transition: 30s;
+      animation: alternate;
+  }
+  .trans>figure:hover>img{
+     transform:perspective(700px) rotatey(1800deg);
+  }
+  .trans>figure>h1{
+      position: absolute;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+     /* sectiontwo....... */
+
+    .itemone{
+        width: 100%;
+        height: 400px;
+    }
+    .itemone>div:nth-of-type(1){
+        width: 55%;
+        height: 100%;
+    }
+    .itemone>div>figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .itemone>div>figure>img:nth-of-type(1){
+        width: 90%;
+        height: 90%;
+       
+    }
+    .itemone>div>figure>img:nth-of-type(2){
+        width: 70%;
+        height: 90%;
+        position: absolute;
+        top: -40px;
+        left: -10px;
+    }
+    
+    .itemone>div:nth-of-type(2){
+       width: 45%;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: flex-end;
+       position: relative;
+    }
+    .itemone>div>h3{
+        font-size: 40px;
+        position: absolute;
+        font-weight: 400;
+        left: 30px;
+        top: 70px;
+    }
+    .itemone>div>button{
+       width: 100px;
+       height: 40px;
+       background-color: rgb(234, 202, 24);
+       border: none;
+       position: inherit;
+       bottom: 100px;
+       left: 30px;
+    }
+    .itemone>div>button:hover{
+       background-color: rgb(7, 7, 7);
+       color: rgb(234, 202, 24);
+    }
+    .itemone>div>p{
+        position: absolute;
+        left: 30px;
+        top: 180px;
+        color: rgb(90, 88, 88);
+    }
+
+    /* sectionthreee.......... */
+    .itemtwo{
+        width: 100%;
+        height: 500px;
+    }
+    .itemtwo>div{
+        width: 33%;
+        height: 100%;
+    }
+
+    .itemtwo .itemtwone>figure{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .itemtwo  .itemtwone>figure>img{
+        width: 55%;
+        height: 35%;
+        filter: grayscale(100%);
+        opacity: 0.4;
+        transition: 30s;
+        margin-top: 20px;
+    }
+    .itemtwo  .itemtwone>figure:hover>img{
+       transform:perspective(700px) rotatey(1800deg);
+    }
+    .itemtwone>figure>figcaption{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        left: 25%;
+        width: 70%;
+        bottom: 0;
+        height: 67%;
+    }
+    .itemtwone>figure>figcaption>h2{
+        position: absolute;
+        font-size: 40px;
+        letter-spacing: 3px;
+        top: 30px;
+        left: -30px;
+    }
+    .itemtwone>figure>figcaption>h5{
+        position: absolute;
+        font-size: 18px;
+        letter-spacing: 2px;
+        bottom: 130px;
+        left: -30px;
+    }
+    .itemtwone>figure>figcaption>p{
+        position: absolute;
+        letter-spacing: 2px;
+        font-size: 15px;
+        color: rgb(120, 118, 118);
+        bottom: 80px;
+        left: -30px;
+    }
+    .itemtwone>figure>figcaption>button{
+        width: 100px;
+        height: 40px;
+        background-color: black;
+        color: rgb(234, 202, 24);
+        position: absolute;
+        bottom: 15px;
+        border: none;
+        left: -30px;
+    }
+    .itemtwone>figure>figcaption>button:hover{
+        background-color: rgb(234, 202, 24);
+        color: rgb(11, 11, 11);
+    }
+   .itemtwotwo>figure{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .itemtwotwo>figure>img{
+       width: 60%;
+       height: 55%;
+       margin-bottom: 50px;
+   }
+   .itemtwotwo>figure>img:hover{
+      transform: scale(1.1);
+      opacity: 0.9;
+   }
+
+   .itemtwothree>figure{
+       width: 100%;
+       height: 100%;
+       display: flex;
+
+   }
+   .itemtwothree>figure>img{
+       width: 80%;
+       height: 85%;
+       display: flex;
+   }
+   .itemtwothree>figure>img:hover{
+       transform: scale(1.1);
+       opacity: 0.9;
+   }
+
+   /* section Threee...... */
+
+   .three{
+       background-color: rgb(255, 255, 255);
+       width: 100%;
+       height: 800px;
+       display: flex;
+       flex-wrap: wrap;
+     
+   }
+   .three .threeone{
+       width: 100%;
+       height: 30%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+   }
+   .three .threeone>figure{
+       width: 50%;
+       height: 90%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+   }
+   .three .threeone>figure>img{
+       width:  35%;
+       height: 90%;
+       filter: grayscale(100%);
+       margin-top: 30px;
+       opacity: 0.4;
+       transition: 30s;
+   }
+   .three .threeone>figure:hover>img{
+       transform:perspective(700px) rotatey(1800deg);
+   }
+
+   .three .threeone>figure>figcaption{
+      position: absolute;
+      font-size: 45px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-top: 30px;
+   }
+   
+   .three .twodiv{
+       width: 100%;
+       height:65%;
+   }
+  .twodiv>div{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+  
+  }
+  .twodiv .threetwo>figure{
+   width: 90%;
+   height: 90%;
+   position: relative;
+  }
+  .twodiv .threetwo>figure>img:nth-of-type(1){
+  width: 47%;
+  height: 47%;
+  top:0;
+  left: 0;
+  position: absolute;
+  }
+  .twodiv .threetwo>figure>img:nth-of-type(2){
+  width: 47%;
+  height: 47%;
+  top:0;
+  left: 53%;
+  position: absolute;
+  }
+  .twodiv .threetwo>figure>img:nth-of-type(3){
+  width: 100%;
+  height: 47%;
+  bottom: 0;
+  position: absolute;
+  
+  }
+  .twodiv .threetwo>figure>img:hover{
+   transform: scale(0.9);
+   opacity: 0.9;
+  }
+  .three .threethr>figure{
+   height: 100%;
+   width: 100%;
+   position: relative;
+  }
+  .three .threethr>figure>img{
+   height: 93%;
+   width: 80%;
+   position: absolute;
+   left: 6%;
+  }
+  .three .threethr>figure:hover>img{
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+
+
+/* footer.............. */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footone{
+    width: 100%;
+    height: 250px;
+}
+.footer .footone>figure{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .foottwo{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(249, 207, 0);
+}
+.footer .foottwo>div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .foottwo>div>span{
+    padding: 15px;
+}
+.footer .foottwo>div>p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.footer .foottwo>div>input{
+    width: 70%;
+    height: 30%;
+    font-size: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+}
+.footer .foottwo>div>button{
+    padding: 15px;
+    position: absolute;
+    right: 70px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.footer .footthree{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: gainsboro;
+}
+.footer .footthree>p{
+   width: 50%;
+   margin: 0 0 0 50px;
+   height: 100%;
+   padding-top: 20px;
+}
+.footthree .footfour{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footfour>span{
+   width: 20px; 
+   height: 20px;
+}
+.footfour>span:nth-of-type(2){
+    margin:0px 0px 30px 0px;
+}  
+</style>
+<body>
+    <header class="head">
+        <div class="left">
+            <div class="top">
+                <figure>
+                    <img src="images/logo.png" alt="">
+                </figure>
+                <nav>
+                    <ul>
+                        <li><a href="">Grog &or; </a>
+                            <div class="bar">
+                                <nav>
+                                    <ul>percpectiv
+                                        <span></span>
+                                        <li><a href="">Lorem </a></li>
+                                        <li><a href="">ipsum</a></li>
+                                        <li><a href="">dolor</a></li>
+                                        <li><a href="">dearen</a></li>
+                                        <li><a href="">wisher</a></li>
+                                    </ul>
+                                    <ul>transform
+                                        <span></span>
+                                        <li><a href="">Lorem </a></li>
+                                        <li><a href="">ipsum</a></li>
+                                        <li><a href="">dolor</a></li>
+                                        <li><a href="">dearen</a></li>
+                                        <li><a href="">wisher</a></li>
+                                    </ul>
+                                    <ul>justify
+                                        <span></span>
+                                        <li><a href="">Lorem </a></li>
+                                        <li><a href="">ipsum</a></li>
+                                        <li><a href="">dolor</a></li>
+                                        <li><a href="">dearen</a></li>
+                                        <li><a href="">wisher</a></li>
+                                    </ul>
+                                    <ul>growth
+                                        <span></span>
+                                        <li><a href="">Lorem </a></li>
+                                        <li><a href="">ipsum</a></li>
+                                        <li><a href="">dolor</a></li>
+                                        <li><a href="">dearen</a></li>
+                                        <li><a href="">wisher</a></li>
+                                    </ul>
+                                    <ul>shiringaje
+                                        <span></span>
+                                        <li><a href="">Lorem </a></li>
+                                        <li><a href="">ipsum</a></li>
+                                        <li><a href="">dolor</a></li>
+                                        <li><a href="">dearen</a></li>
+                                        <li><a href="">wisher</a></li>
+                                    </ul>
+                                    <ul>skew
+                                        <span></span>
+                                        <li><a href="">Lorem </a></li>
+                                        <li><a href="">ipsum</a></li>
+                                        <li><a href="">dolor</a></li>
+                                        <li><a href="">dearen</a></li>
+                                        <li><a href="">wisher</a></li>
+                                    </ul>
+                                </nav>
+                               <section class="ohh">
+                                <figure>
+                                    <img src="images/menu-banner.jpg" alt="">
+                                </figure>
+                               </section>
+                            </div>
+                        </li>
+                        <li><a href="">Petunetse &or;</a>
+                        <div class="bartwo">
+                            <figure>
+                                <img src="images/bar01.jpg" alt="">
+                                <figcaption>
+                                    <h5>Lorem, ipsum dolor.</h5>
+                                    <p>115.9$</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/bar02.jpg" alt="">
+                                <figcaption>
+                                    <h5>Lorem, ipsum dolor.</h5>
+                                    <p>189.3$</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/bar03.jpg" alt="">
+                                <figcaption>
+                                    <h5>Lorem, ipsum dolor.</h5>
+                                    <p>255.1$</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        </li>
+                  
+                        <li class="oneli"><a href="">Lumicera &or;</a>
+                        </li>
+                        <li><a href="">Contact us </a>
+                        </li>
+                        <li class="twoli"><a href="">More &or;</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section>
+                   <span>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg>
+                   </span>
+                   <span>
+                    <?xml version="1.0" ?><svg  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g id="User"><path d="M21,30H11a5,5,0,0,1-5-5V24a9,9,0,0,1,9-9h2a9,9,0,0,1,9,9v1A5,5,0,0,1,21,30ZM15,17a7,7,0,0,0-7,7v1a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V24a7,7,0,0,0-7-7Z"/><path d="M16,14a6,6,0,1,1,6-6A6,6,0,0,1,16,14ZM16,4a4,4,0,1,0,4,4A4,4,0,0,0,16,4Z"/></g></svg>
+                   </span>
+                   <span><?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"   stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+                    <circle cx="25" cy="27" r="2" />
+                    <circle cx="12" cy="27" r="2" />
+                </svg></span>
+                </section>
+            </div>
+            <section class="bottom">
+                <p>pottery & art</p>
+                <h3>Ceramic Art</h3>
+                <p>Tamberus Caps & ceramic summers sales</p>
+                <button type="submit">shop now</button>
+            </section> 
+        </div> 
+    </header>
+    <div class="trans">
+        <figure>
+            <img src="images/b68fb51580c6c3e242597721e1e6b263.jpg" alt="">  
+            <h1>About Our Store</h1>
+        </figure>   
+    </div>
+    <div class="itemone">
+        <div>
+            <figure>
+                <img src="images/cms-02.jpg" alt="">
+                <img src="images/cms-01.png" alt="">
+            </figure>
+        </div>
+        <div>
+            <h3>Ceramic - About Us Quality & Affotdable</h3>
+            <p>
+                It is a long established fact that a reader will be
+                 distracted by the readable content of a page when 
+                !t is a long established fact that a reader will be distracted by the
+            </p>
+            <button type="submit">shop Now</button>
+        </div>
+    </div>
+    <section class="itemtwo">
+        <div class="itemtwone">
+            <figure>
+                <img src="images/b68fb51580c6c3e242597721e1e6b263.jpg" alt="">
+                <figcaption>
+                    <h2>Italian <br> Cluture</h2>
+                    <h5>The Best Pottery Product</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <button type="submit">Read More</button>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="itemtwotwo">
+            <figure>
+                <img src="images/cms-03.jpg" alt="">
+            </figure>
+        </div>
+        <div class="itemtwothree">
+            <figure>
+                <img src="images/cms-04.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+    <section class="three">
+        <div class="threeone">
+            <figure>
+                <img src="images/b68fb51580c6c3e242597721e1e6b263.jpg" alt="">
+                <figcaption>
+                    <h4>Pottery Gallery</h4>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="twodiv">
+            <div class="threetwo">
+                <figure>
+                    <img src="images/Gallery-01.jpg" alt="">
+                    <img src="images/Gallery-02.jpg" alt="">
+                    <img src="images/Gallery-03.jpg" alt="">
+                </figure>
+            </div>
+            <div class="threethr">
+                <figure>
+                    <img src="images/Gallery-04.jpg" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footone">
+            <figure><img src="images/2-130x130.png" alt=""></figure>
+            <figure><img src="images/3-130x130.png" alt=""></figure>
+            <figure><img src="images/4-130x130.png" alt=""></figure>
+            <figure><img src="images/5-130x130.png" alt=""></figure>
+        </div>
+        <div class="foottwo">
+            <div>
+                <span>
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 14 6 L 36 6 C 40.430666 6 44 9.5693339 44 14 L 44 36 C 44 40.430666 40.430666 44 36 44 L 14 44 C 9.5693339 44 6 40.430666 6 36 L 6 14 C 6 9.5693339 9.5693339 6 14 6 z M 13 15 C 11.35503 15 10 16.35503 10 18 L 10 32 C 10 33.64497 11.35503 35 13 35 L 37 35 C 38.64497 35 40 33.64497 40 32 L 40 18 C 40 16.35503 38.64497 15 37 15 L 13 15 z M 13.414062 17 L 36.583984 17 L 27.677734 25.892578 C 26.18494 27.382984 23.796834 27.382819 22.304688 25.890625 L 13.414062 17 z M 38 18.412109 L 38 31.587891 L 31.402344 25 L 38 18.412109 z M 12 18.414062 L 18.585938 25 L 12 31.585938 L 12 18.414062 z M 29.988281 26.412109 L 36.585938 33 L 13.414062 33 L 20 26.414062 L 20.890625 27.304688 C 23.146478 29.56054 26.832638 29.562194 29.089844 27.308594 L 29.988281 26.412109 z"/></svg>
+                </span>
+                <p>Sign Up For Newsletter</p>
+            </div>
+            <div>
+                <input type="search" name="" id="">
+                <button type="submit">subscrip</button>
+            </div>
+        </div>
+        <div class="footthree">
+            <p>Powered By OpenCart Your Store © 2022</p>
+            <div class="footfour">
+                <span>
+                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="400" style="fill:none;" width="400" x="56" y="56"/><path d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104" style="fill:#1da1f2;fill-rule:nonzero;"/></svg>
+                </span>
+                <span>
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 14 6 L 36 6 C 40.430666 6 44 9.5693339 44 14 L 44 36 C 44 40.430666 40.430666 44 36 44 L 14 44 C 9.5693339 44 6 40.430666 6 36 L 6 14 C 6 9.5693339 9.5693339 6 14 6 z M 13 15 C 11.35503 15 10 16.35503 10 18 L 10 32 C 10 33.64497 11.35503 35 13 35 L 37 35 C 38.64497 35 40 33.64497 40 32 L 40 18 C 40 16.35503 38.64497 15 37 15 L 13 15 z M 13.414062 17 L 36.583984 17 L 27.677734 25.892578 C 26.18494 27.382984 23.796834 27.382819 22.304688 25.890625 L 13.414062 17 z M 38 18.412109 L 38 31.587891 L 31.402344 25 L 38 18.412109 z M 12 18.414062 L 18.585938 25 L 12 31.585938 L 12 18.414062 z M 29.988281 26.412109 L 36.585938 33 L 13.414062 33 L 20 26.414062 L 20.890625 27.304688 C 23.146478 29.56054 26.832638 29.562194 29.089844 27.308594 L 29.988281 26.412109 z"/></svg>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
